@@ -23,5 +23,236 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Frelencer portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-xl sticky-top navbar-dark bg--darkBluePrimary py-3">
+        <!-- ho un problema con la classe sticky da dare alla nav, non mi prende il valore webkit(per lo meno su firefox) ho prvato anche risolvere con una position fixed però va rompere il blocco -->
+        <div class="container">
+          <a
+            class="navbar-brand text-white fs-3 text-uppercase fw-bold"
+            href="#hero"
+            >start bootstrap</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarDark"
+            aria-controls="navbarDark"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarDark">
+            <div class="navbar-nav">
+              <a
+                class="nav-link text-uppercase fs-6 fw-bold"
+                href="#sectionPortfolio"
+                >portfolio</a
+              >
+              <a
+                class="nav-link text-uppercase fs-6 fw-bold"
+                href="#sectionAbout"
+                >about</a
+              >
+              <a
+                class="nav-link text-uppercase fs-6 fw-bold"
+                href="#sectionContactMe"
+                >contact me</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="hero" class="bg--acquaGreen py-4">
+      <div class="container text-white">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="mx-auto col-6">
+            <img src="./assets/img/avatar.svg" alt="avatar" />
+          </div>
+          <h1 class="text-uppercase fw-bold">start bootstrap</h1>
+          <div class="star-separator">
+            <div></div>
+            <i class="fa-solid fa-star"></i>
+            <div></div>
+          </div>
+          <p class="text-uppercase">
+            graphic artist - web designer - illustrator
+          </p>
+        </div>
+      </div>
+    </section>
+    <main id="main">
+      <section id="sectionPortfolio" class="py-4">
+        <div class="container text-center">
+          <h2 class="text-uppercase my-3 fw-bold">portfolio</h2>
+          <div class="star-separator my-3">
+            <div></div>
+            <i class="fa-solid fa-star"></i>
+            <div></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6 col-xl-4">
+              <div class="card overflow-hidden rounded-4">
+                <img src="./assets/img/cabin.png" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="card overflow-hidden rounded-4">
+                <img src="./assets/img/cake.png" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="card overflow-hidden rounded-4">
+                <img src="./assets/img/circus.png" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="card overflow-hidden rounded-4">
+                <img src="./assets/img/game.png" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="card overflow-hidden rounded-4">
+                <img src="./assets/img/safe.png" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+              <div class="card overflow-hidden rounded-4">
+                <img src="./assets/img/submarine.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sectionAbout" class="bg--acquaGreen text-white py-4">
+        <div class="container text-center">
+          <h2 class="text-uppercase my-3 fw-bold">about</h2>
+          <div class="star-separator my-3">
+            <div></div>
+            <i class="fa-solid fa-star"></i>
+            <div></div>
+          </div>
+        </div>
+        <div class="container my-3">
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              dolorum, magni asperiores quisquam optio inventore! Distinctio
+              quos ipsam illo rerum atque ducimus, doloremque quibusdam facere
+              error quasi nemo assumenda nihil?
+            </div>
+            <div class="col-lg-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              dolorum, magni asperiores quisquam optio inventore! Distinctio
+              quos ipsam illo rerum atque ducimus, doloremque quibusdam facere
+              error quasi nemo assumenda nihil?
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <button
+            type="button"
+            class="btn btn-dark border-white bg--acquaGreen mx-auto">
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </button>
+        </div>
+      </section>
+      <section id="sectionContactMe" class="py-4">
+        <div class="container text-center">
+          <h2 class="text-uppercase my-3 fw-bold">contact me</h2>
+          <div class="star-separator my-3">
+            <div></div>
+            <i class="fa-solid fa-star"></i>
+            <div></div>
+          </div>
+          <div class="col-lg-10 mx-auto text-start">
+            <form action="https://learning.tizianonicolai.com/request-catcher/"  method="post" target="_blank">
+              <div class="form-floating my-3">
+                <input
+                  type="text"
+                  class="form-control "
+                  id="userName"
+                  name="user-name"
+                  placeholder="Name" />
+                <label for="userName">Name</label>
+              </div>
+              <div class="form-floating my-3">
+                <input
+                type="email"
+                class="form-control "
+                id="userMail"
+                name="user-mail"
+                placeholder="email@example.com" />
+              <label for="userMail">Email address</label>
+              </div>
+              <div class="form-floating my-3">
+                <input
+                type="tel"
+                class="form-control "
+                id="userPhone"
+                name="user-phone"
+                placeholder="Phone number" />
+              <label for="userPhone">Phone number</label>
+              </div>
+              <textarea class="form-control my-3 " name="user-msg" id="userMsg" cols="30" rows="4" placeholder="inserisci qui il tuo messaggio"></textarea>
+              <button type="submit" class="btn btn-dark bg--acquaGreen border-white">Send</button>
+              
+          </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="bg--darkBluePrimary">
+      <section class="bg--darkBlueSecondary py-4">
+        <div class="container text-center">
+          <div class="row gy-4">
+            <div class="col-xl-4">
+              <h3 class="text-uppercase">location</h3>
+              <p>2215 Jhon Daniel Drive Clark, MO 54243</p>
+            </div>
+            <div class="col-xl-4">
+              <h3 class="text-uppercase">around the web</h3>
+              <div class="footer__aroundTheWeb__socials">
+                <div class="--round-frame">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="--round-frame">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+                <div class="--round-frame">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="--round-frame">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <h3 class="text-uppercase">about freelancer</h3>
+              <p>
+                Freelance is a free to use, open source Bootstarp theme created
+                by Start Bootstrap
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container text-center py-5">
+        <span>Copyright &copy; Your Website 2019</span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+      <!-- compito completato senza alcune particolari difficolta, ho trovato anche bootstrap non troppo complicato da usare, anzi ha facilitato pure il lavoro tenendo il css completamente pulito e l'html con sempre le stesse classi generiche del framework -->
+  </body>
 </html>

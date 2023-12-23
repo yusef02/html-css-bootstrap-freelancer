@@ -1,0 +1,96 @@
+/* RESET */
+* {
+  font-size: 20px;
+}
+
+/* UTILITIS */
+.--round-frame {
+  width: 100%;
+  aspect-ratio: 1;
+  line-height: 100%;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+
+  /* border: 1px solid currentColor; */
+}
+.--round-frame * {
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+}
+
+/* colors */
+.bg--acquaGreen {
+  background: #1abc9c;
+}
+.bg--darkBluePrimary {
+  background-color: #2c3e50;
+  color: white;
+}
+.bg--darkBlueSecondary {
+  background-color: #3a546d;
+}
+.star-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star-separator div {
+  margin: 0 1rem;
+  width: 7rem;
+  height: 0.2rem;
+  background-color: currentColor;
+  border-radius: 4px;
+}
+
+/* HEADER */
+
+/* nav */
+
+/* #header .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+} */
+
+/* stranamente la header navbar non accenna ad accettare il posizionamento sticky */
+
+/* overwritten */
+/* .nav-link {
+  color: inherit;
+} */
+.nav-link:hover,
+.nav-link:focus {
+  color: inherit;
+}
+
+/* HERO */
+#hero {
+}
+#hero [class^="col"] > * {
+  margin-bottom: 20px;
+}
+
+/* MAIN */
+/* contact me */
+.form-control {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0;
+}
+.form-control:focus {
+  border-color: var(--bs-body-color);
+  box-shadow: none;
+}
+
+/* FOOTER */
+.footer__aroundTheWeb__socials .--round-frame {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border: 1px solid currentColor;
+  display: inline-block;
+  margin: 0 0.3rem;
+}
